@@ -35,6 +35,10 @@ body {
   /* rounded corners */
   text-align: center;
   /* center the text */
+  color: black;
+  text-decoration: none;
+  /*remove underline*/
+  font-family: Inter;
 }
 
 .profile-pic {
@@ -46,7 +50,7 @@ body {
 }
 
 h1 {
-  color: red;
+  color: white;
   font-size: 24px;
   font-family: Comic Sans MS;
 }
