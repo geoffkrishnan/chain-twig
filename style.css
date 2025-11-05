@@ -1,47 +1,31 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #1a1a1a;
-  width: 400px;
-  padding: 100px 20px 20px 20px;
-  border-radius: 20px 20px 0 0;
-  /*horizontal offset, vert offset, blur amount, color & opacity*/
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  background-color: #1189c7;
-  margin-bottom: 0;
-  min-height: calc(100vh - 30px);
-}
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0c608c;
   min-height: 100vh;
-  margin: 0;
   padding-top: 30px;
+  margin: 0;
+  background-color: #0c608c;
 }
 
-.link-button {
-  background-color: white;
-  width: 90%;
-  /* full width of container */
-  padding: 15px;
-  /* space inside the box */
-  margin: 10px 0;
-  /* space between boxes */
-  border-radius: 10px;
-  /* rounded corners */
-  text-align: center;
-  /* center the text */
-  color: black;
-  text-decoration: none;
-  /*remove underline*/
-  font-family: Inter;
+/* Main card box*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 30px);
+  width: 400px;
+  padding: 100px 20px 20px 20px;
+  margin-bottom: 0;
+  background-color: #1189c7;
+  border-radius: 20px 20px 0 0;
+  /*horizontal offset, vert offset, blur amount, color & opacity*/
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* prof section */
 .profile-pic {
+  display: block;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -50,7 +34,25 @@ body {
 }
 
 h1 {
-  color: white;
+  font-family: "Comic Sans MS", cursive;
   font-size: 24px;
-  font-family: Comic Sans MS;
+  color: white;
+}
+
+.link-button {
+  /*box styling*/
+  display: block;
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 10px;
+
+  /* text */
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  /*removes underline*/
 }
