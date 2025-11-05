@@ -6,5 +6,5 @@ TO-DO:
 - Hover effects
 - Mobile optimization
 - Animations
-- Custom icons for link box
-- Share button for link box
+- Website thumbnails 
+- Share buttons
