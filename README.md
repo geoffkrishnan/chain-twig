@@ -1,6 +1,6 @@
 First html/css project.
 
-Built in about 2.5 hrs, learned CSS basics.
+Built to learn HTML/CSS basics.
 
 TO-DO:
 - Hover effects
