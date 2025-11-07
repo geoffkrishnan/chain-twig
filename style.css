@@ -41,22 +41,27 @@ h1 {
   color: white;
 }
 
-.link-button {
-  /*box styling*/
-  display: block;
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
-  padding: 15px;
   margin: 10px 0;
   background-color: white;
   border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  gap: 8px;
+}
 
-  /* text */
+.link {
+  flex-grow: 1;
+
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: black;
   text-align: center;
   text-decoration: none;
-  /*removes underline*/
 }
 
 a:link {
@@ -69,6 +74,58 @@ a:hover {
   text-decoration: underline;
   transition: color 0.3s ease;
 }
+
+.copy-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: white !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.copy-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.copy-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.tool-tip {
+  position: absolute;
+  bottom: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.copy-link.show-tool-tip .tool-tip {
+  opacity: 1;
+}
+
 
 footer {
   position: absolute;

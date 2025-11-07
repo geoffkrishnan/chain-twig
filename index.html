@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="stylesheet" href="style.css">
   <!-- makes fonts load faster-->
-  <link rel="preconnect" href="https://fonts.google.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
 </head>
@@ -19,18 +19,49 @@
   <div class="container">
     <img class="profile-pic" src="images/profile-pic.jpeg" alt="profile pic">
     <h1>Geoff</h1>
-    <a href="https://github.com/geoffkrishnan" class="link-button" target="_blank" rel="noopener noreferrer">GitHub is
-      cool</a>
-    <a href="https://buymeacoffee.com/kratowle" class="link-button" target="_blank" rel="noopener noreferrer">Buy my
-      buddy a coffee</a>
-    <a href="https://theodinproject.com" class="link-button" target="_blank" rel="noopener noreferrer">Learn
-      frontend</a>
-    <a href="https://boot.dev" class="link-button" target="_blank" rel="noopener noreferrer">Learn backend</a>
-    <a href="https://github.com/ossu/computer-science" class="link-button" target="_blank"
-      rel="noopener noreferrer">Learn computer science</a>
+    <div class="link-wrapper">
+      <a href="https://github.com/geoffkrishnan" class="link" target="_blank" rel="noopener noreferrer">GitHub is
+        cool</a>
+      <button class="copy-link" aria-label="Copy link to clipboard">
+        <img src="images/link.png" alt="Copy link icon">
+        <span class="tool-tip">Copied!</span>
+      </button>
+    </div>
+    <div class="link-wrapper">
+      <a href="https://buymeacoffee.com/kratowle" class="link" target="_blank" rel="noopener noreferrer">Buy my
+        buddy a coffee</a>
+      <button class="copy-link" aria-label="Copy link to clipboard">
+        <img src="images/link.png" alt="Copy link icon">
+        <span class="tool-tip">Copied!</span>
+      </button>
+    </div>
+    <div class="link-wrapper">
+      <a href="https://theodinproject.com" class="link" target="_blank" rel="noopener noreferrer">Learn
+        frontend</a>
+      <button class="copy-link" aria-label="Copy link to clipboard">
+        <img src="images/link.png" alt="Copy link icon">
+        <span class="tool-tip">Copied!</span>
+      </button>
+    </div>
+    <div class="link-wrapper">
+      <a href="https://boot.dev" class="link" target="_blank" rel="noopener noreferrer">Learn backend</a>
+      <button class="copy-link" aria-label="Copy link to clipboard">
+        <img src="images/link.png" alt="Copy link icon">
+        <span class="tool-tip">Copied!</span>
+      </button>
+    </div>
+    <div class="link-wrapper">
+      <a href="https://github.com/ossu/computer-science" class="link" target="_blank" rel="noopener noreferrer">Learn
+        computer science</a>
+      <button class="copy-link" aria-label="Copy link to clipboard">
+        <img src="images/link.png" alt="Copy link icon">
+        <span class="tool-tip">Copied!</span>
+      </button>
+    </div>
   </div>
   <footer>Made with <3 <a href="https://www.flaticon.com/free-icons/copy-link" title="copy link icons" target="_blank"
       rel="noopener noreferrer">Copy link icons created by Fahrul Saputra - Flaticon</a></footer>
+  <script src="script.js"></script>
 
 </body>
 
